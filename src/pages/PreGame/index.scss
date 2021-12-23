@@ -1,0 +1,302 @@
+.pregame{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    .left{
+        position: absolute;
+        width: 256px;
+        height: 170px;
+        background-image: url(../../assets/images/left.png);
+        left: 0;
+        bottom: 50px;
+    }
+    .heart{
+        position: absolute;
+        opacity: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        &.heart-1{
+            width: 17px;
+            height: 18px;
+            left: 149px;
+            top: 179px;
+            background-image: url(../../assets/images/heart1.png);
+            animation: heart1 3.5s infinite ease-out forwards;
+        }
+        &.heart-2{
+            width: 44px;
+            height: 35px;
+            left: 190px;
+            top: 172px;
+            background-image: url(../../assets/images/heart2.png);
+            animation: heart2 3.5s infinite ease-out forwards;
+        }
+        &.heart-3{
+            width: 34px;
+            height: 34px;
+            left: 172px;
+            top: 211px;
+            background-image: url(../../assets/images/heart3.png);
+            animation: heart3 3.5s infinite ease-out forwards;
+        }
+    }
+
+    .pchik{
+        position: absolute;
+        left: 20px;
+        bottom: 0;
+        width: 323px;
+        height: 300px;
+        background-image: url(../../assets/images/pchik.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .click-part{
+        position: absolute;
+        left: 45px;
+        top: 333px;
+        width: 115px;
+        height: 80px;
+        border-radius: 50px;
+        z-index: 4;
+        cursor: pointer;
+    }
+    .toz{
+        position: absolute;
+        width: 96px;
+        height: 84px;
+        left: 253px;
+        top: 350px;
+        background-image: url(../../assets/images/toz.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform-origin: left center;
+        transform:scale(0);
+        opacity: 0;
+        
+    }
+    .gift{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 121px;
+        height: 152px;
+        background-image: url(../../assets/images/gift2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform-origin: left center;
+    }
+
+    .start{
+        position: absolute;
+        width: 205px;
+        height: 33px;
+        top: 400px;
+        left: 316px;
+        text-transform: uppercase;
+        padding: 12px 31px;
+        font-size: 17px;
+        border-radius: 25px;
+        font-family: 'Montserratarm-Medium';
+        cursor: pointer;
+        opacity: 0;
+        background-image: url(../../assets/images/button2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .text{
+        position: absolute;
+        width: 390px;
+        top: 143px;
+        left: 316px;
+        font-size: 17px;
+        font-family: 'Montserratarm-Light';
+        color: #0c0c0c;
+        opacity: 0;
+        letter-spacing: 1px;
+    }
+    .press{
+        font-family: 'Montserratarm-Regular';
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #f1b899;
+        width: 77px;
+        height: 77px;
+        line-height: 77px;
+        border-radius: 40px;
+        font-size: 12px;
+        text-align: center;
+        position: absolute;
+        left: 10px;
+        top: 277px;
+        z-index: 2;
+        transform: translateX(-100px);
+        animation: press .4s .8s 1 ease-out forwards;
+        cursor: pointer;
+    }
+    .arrow{
+        position: absolute;
+        width: 30px;
+        height: 37px;
+        left: 73px;
+        top: 295px;
+        z-index: 4;
+        background-image: url(../../assets/images/arrow.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 0;
+        transform: translate(-10px,-20px);
+        animation: arrow .4s .3s 1 ease-out forwards;
+
+    }
+
+
+    &.animate{
+        .start{
+            animation:  button2 1.8s 1.9s 1 linear forwards,
+                        button 1s 2.2s infinite ease-in-out alternate;
+        }
+        .toz{
+            animation: toz 1.3s 1 linear forwards;
+        }
+        .text{
+            animation: text .8s .5s 1 linear forwards;
+        }
+    }
+}
+
+@media screen and (max-width:819px){
+    .pregame{
+        .pchik{
+            left: 0;
+            width: 62%;
+            height: 0;
+            padding-bottom: 57.585139%;
+        }
+        .text{
+            left: 10px;
+            width: calc(100% - 20px);
+            margin: 0 auto;
+            top: 70px;
+            font-size: 13px;
+            top: 45px;
+        }
+        .gift{
+            width: 80px;
+            height: 100px;
+        }
+        .start{
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+            top: auto;
+            bottom: 70vw;
+            width: 50%;
+            background-size: contain;
+            background-position: center;
+        }
+        .press{
+            width: 16vw;
+            height: 0;
+            padding-bottom: 16%;
+            line-height: 16vw;
+            font-size: 2.5vw;
+            bottom: 48vw;
+            top: auto;
+        }
+        .arrow{
+            top: auto;
+            bottom: 52vw;
+        }
+        .toz{
+            left: 39%;
+            top: auto;
+            bottom: 29vw;
+        }
+        .click-part{
+            left: 8px;
+            top: auto;
+            bottom: 30vw;
+        }
+        .heart{
+            display: none;
+        }
+    }
+    
+}
+
+@keyframes toz{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    20%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    80%{
+        opacity: .8;
+    }
+    100%{
+        opacity: 0;
+        transform: scale(3);
+    }
+}
+
+@keyframes text{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes button2{
+    0% {
+        opacity: 0;
+        transform: scale3d(1, 1, 1);
+      }
+      27.7778% {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+      }
+      55.5556%,100% {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+      }
+
+}
+@keyframes button3{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.07);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+}
+@keyframes arrow{
+    0%{
+        transform: translate(-10px,-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+@keyframes press{
+    0%{
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}

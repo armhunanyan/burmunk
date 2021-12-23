@@ -1,0 +1,296 @@
+.game{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    .logo{
+        position: absolute;
+        top: 25px;
+        left:0;
+        right: 0;
+        margin: 0 auto;
+        width: 208px;
+        height: 48px;
+        background-image: url(../../assets/images/logo2.png);
+        background-size: cover;
+        background-repeat: no-repeat;       
+    }
+    .wrapper{
+        position: absolute;
+        top: 140px;
+        left: 100px;
+        width: 600px;
+        z-index: 3;
+
+        .index{
+            color: #b40152;
+            text-align: left;
+            font-size: 23px;
+            font-family: 'Montserratarm-Bold';
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            
+        }
+
+        .question{
+            font-size: 20px;
+            color: #000;
+            font-family: 'Montserratarm-Bold';
+            margin-top: 0;
+            text-transform: uppercase;
+
+            .smile{
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                background-image: url(../../assets/images/smile.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                vertical-align: middle;
+            }
+        }
+        .answer{
+            position: relative;
+            display: flex;
+            font-family: 'Montserratarm-Regular';
+            font-size: 17px;
+            color: #000;
+            line-height: 30px;
+            margin-bottom: 25px;
+            cursor: pointer;
+            margin-left: 30px;
+            padding-left: 16px;
+
+            span{
+                position: absolute;
+                left: -30px;
+                width: 26px;
+                height: 26px;
+                display: inline-block;
+                border-radius: 135px;
+                border: 2px solid #d7d7d7;
+                box-sizing: border-box;
+                vertical-align: middle;
+                margin-right: 15px;
+                cursor: pointer;
+
+                &.active{
+                    background-image: url(../../assets/images/ptich.png);
+                    background-position: center;
+                    background-size: auto;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+    .gift{
+        position: absolute;
+        width: 263px;
+        height: 174px;
+        right: 0;
+        bottom: 0;
+        background-image: url(../../assets/images/gift3.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .fly{
+        position: absolute;
+        width: 34px;
+        height: 20px;
+        right: 200px;
+        bottom: 200px;
+        background-image: url(../../assets/images/heart4.png);
+        animation: 12.6s linear 0s infinite normal forwards butterfly;
+    }
+}
+
+@media screen and (max-width:819px){
+    .game{
+        .logo{
+            max-width: 208px;
+            background-size: contain;
+            width: 40%;
+        }
+        .wrapper{
+            top: 90px;
+            left: 20px;
+            width: calc(100% - 40px);
+
+            .question{
+                font-size: 15px;
+            }
+
+            .answer{
+                font-size: 12px;
+                line-height: 22px;
+                margin-bottom: 5px;
+                margin-left: 15px;
+
+                span{
+                    top: 3px;
+                    left: -15px;
+                    width: 18px;
+                    height: 18px;
+                    margin-right: 15px;
+
+                    &.active{
+                        background-size: 70%;
+                    }
+                }
+            }
+        }
+        .gift{
+            width: 50%;
+            height: 0;
+            padding-bottom: 33.0798%;
+        }
+        
+    }
+}
+
+@keyframes butterfly {
+    0% {
+        transform: translate3d(0px, 0px, 0px);
+        animation-timing-function: linear;
+    }
+    14.2857% {
+        transform: translate3d(0px, 0px, 0px);
+        animation-timing-function: linear;
+    }
+    25.3968% {
+        transform: translate3d(0px, 0px, 0px);
+        animation-timing-function: linear;
+    }
+    39.6825% {
+        transform: translate3d(0px, 0px, 0px);
+        animation-timing-function: linear;
+    }
+    75.3968% {
+        transform: translate3d(0px, 0px, 0px);
+        animation-timing-function: linear;
+    }
+    91.2698% {
+        transform: translate3d(0px, 0px, 0px);
+        animation-timing-function: linear;
+    }
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+        animation-timing-function: linear;
+    }
+}
+@keyframes gwd-motion-path-1iog-keys-x {
+    0% {
+        transform: translate3d(0px, 0px, 0px);
+        animation-timing-function: cubic-bezier(0.3041, 0.346, 0.6186, 0.7413);
+    }
+    13.21% {
+        transform: translate3d(101.38px, 0px, 0px);
+    }
+    14.29% {
+        transform: translate3d(105px, 0px, 0px);
+        animation-timing-function: cubic-bezier(0.3732, 0.6445, 0.6906, 1);
+    }
+    20.16% {
+        transform: translate3d(115.2px, 0px, 0px);
+        animation-timing-function: cubic-bezier(0.3265, 0, 0.645, 0.3148);
+    }
+    25.4% {
+        transform: translate3d(105px, 0px, 0px);
+    }
+    25.75% {
+        transform: translate3d(103.61px, 0px, 0px);
+        animation-timing-function: cubic-bezier(0.3688, 0.2738, 0.6686, 0.6751);
+    }
+    32.18% {
+        transform: translate3d(48.5px, 0px, 0px);
+        animation-timing-function: cubic-bezier(0.2177, 0.2602, 0.6099, 1.0533);
+    }
+    39.68% {
+        transform: translate3d(3px, 0px, 0px);
+    }
+    40.58% {
+        transform: translate3d(4.93px, 0px, 0px);
+    }
+    41.47% {
+        transform: translate3d(8.11px, 0px, 0px);
+        animation-timing-function: cubic-bezier(0.3621, 0.2949, 0.6534, 0.6825);
+    }
+    61.11% {
+        transform: translate3d(121.05px, 0px, 0px);
+        animation-timing-function: cubic-bezier(0.2816, 1.548, 0.6073, 4.4377);
+    }
+    75.4% {
+        transform: translate3d(133px, 0px, 0px);
+        animation-timing-function: cubic-bezier(0.3622, 0.3029, 0.6328, 0.7102);
+    }
+    90.87% {
+        transform: translate3d(8.16px, 0px, 0px);
+    }
+    91.27% {
+        transform: translate3d(6px, 0px, 0px);
+        animation-timing-function: cubic-bezier(0.2047, 1.1272, 0.8121, 4.1216);
+    }
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+@keyframes gwd-motion-path-1iog-keys-y {
+    0% {
+        transform: translate3d(0px, 0px, 0px);
+        animation-timing-function: cubic-bezier(0.3971, 0.2429, 0.749, 0.6089);
+    }
+    14.29% {
+        transform: translate3d(0px, -87px, 0px);
+    }
+    25.4% {
+        transform: translate3d(0px, -220px, 0px);
+        animation-timing-function: cubic-bezier(0.2688, 0.3926, 0.5822, 0.7605);
+    }
+    27.18% {
+        transform: translate3d(0px, -230.71px, 0px);
+        animation-timing-function: cubic-bezier(0.5144, -0.4037, 0.8805, 0.6233);
+    }
+    39.68% {
+        transform: translate3d(0px, -190px, 0px);
+        animation-timing-function: cubic-bezier(0.3042, 0.3621, 0.7009, 0.6328);
+    }
+    67.36% {
+        transform: translate3d(0px, 4.95px, 0px);
+        animation-timing-function: cubic-bezier(0.3301, 0.3361, 0.6205, 0.7169);
+    }
+    75.4% {
+        transform: translate3d(0px, 70px, 0px);
+        animation-timing-function: cubic-bezier(0.3659, -31.6517, 0.6939, -34.8807);
+    }
+    91.27% {
+        transform: translate3d(0px, 69px, 0px);
+        animation-timing-function: cubic-bezier(0.3498, 0.3162, 0.6547, 0.6901);
+    }
+    99.56% {
+        transform: translate3d(0px, 1.83px, 0px);
+    }
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+
+[data-gwd-motion-path-node] {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    pointer-events: none;
+}
+.gwd-motion-path-m47p-anim-x {
+    animation: 12.6s linear 0s infinite normal forwards gwd-motion-path-1iog-keys-x;
+    transform: translate3d(0px, 0px, 0px);
+}
+.gwd-motion-path-m47p-anim-y {
+    animation: 12.6s linear 0s infinite normal forwards gwd-motion-path-1iog-keys-y;
+    transform: translate3d(0px, 0px, 0px);
+}

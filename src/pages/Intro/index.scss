@@ -1,0 +1,284 @@
+.intro{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff1e8;
+
+    .girl{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 800px;
+        height: 600px;
+        background-image: url(../../assets/images/girlv2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .gift{
+        position: absolute;
+        width: 263px;
+        height: 277px;
+        left: 260px;
+        top: 30px;
+        background-image: url(../../assets/images/gift.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: translate(0px,-270px);
+        animation: gift .5s 1.6s 1 linear forwards;
+
+    }
+    .start{
+        position: absolute;
+        top:460px;
+        left:542px;
+        width: 154px;
+        height: 47px;
+        background-image: url(../../assets/images/button.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: white;
+        text-transform: uppercase;
+        font-size: 20px;
+        border-radius: 25px;
+        font-family: 'Montserratarm-Medium';
+        cursor: pointer;
+        animation: button 1.1s 1.2s infinite ease-in-out alternate;
+    }
+
+    .logo{
+        position: absolute;
+        top: 12px;
+        left: 296px;
+        width: 208px;
+        height: 48px;
+        background-image: url(../../assets/images/logo.png);
+        background-size: cover;
+        background-repeat: no-repeat;        
+    }
+    .aroma{
+        position: absolute;
+        top: 237px;
+        left: 509px;
+        width: 218px;
+        height: 57px;
+        background-image: url(../../assets/images/aroma.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .text1{
+        position: absolute;
+        width: 227px;
+        height: 53px;
+        top: 298px;
+        left: 493px;
+        color: #b40152;
+        font-family: 'Montserratarm-ExtraBold';
+        font-size: 65px;
+        text-transform: uppercase;
+        background-image: url(../../assets/images/txt1.png);
+    }
+    .text2{
+        position: absolute;
+        width: 252px;
+        height: 19px;
+        top: 369px;
+        left: 492px;
+        color: #616060;
+        font-size: 17px;
+        font-family: 'Montserratarm-Regular';
+        text-align: center;
+        background-image: url(../../assets/images/txt2.png);
+
+    }
+    .heart{
+        position: absolute;
+        opacity: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        &.heart-1{
+            width: 17px;
+            height: 18px;
+            left: 149px;
+            top: 159px;
+            background-image: url(../../assets/images/heart1.png);
+            animation: heart1 3.5s infinite ease-out forwards;
+        }
+        &.heart-2{
+            width: 44px;
+            height: 35px;
+            left: 190px;
+            top: 152px;
+            background-image: url(../../assets/images/heart2.png);
+            animation: heart2 3.5s infinite ease-out forwards;
+        }
+        &.heart-3{
+            width: 34px;
+            height: 34px;
+            left: 172px;
+            top: 191px;
+            background-image: url(../../assets/images/heart3.png);
+            animation: heart3 3.5s infinite ease-out forwards;
+        }
+    }
+}
+
+@media screen and (max-width:819px){
+    .intro{
+        
+        .logo{
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          max-width: 208px;
+          width: 50%;
+          background-size: contain;
+          top: 10px;
+        }
+        .girl{
+          width: 150%;
+          padding-bottom: 112.2%;
+          height: 0;
+        }
+        .aroma{
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          width: 50%;
+          max-width: 218px;
+          top: 65px;
+          background-size: contain;
+        }
+        .text1{
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          top: 110px;
+          max-width: 227px;
+          background-size: contain;
+          width: 50%;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .text2{
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          top: 162px;
+          width: 50%;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          max-width: 252px;
+        }
+        .start{
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          top: 180px;
+          width: 32%;
+          max-width: 154px;
+        }
+        .heart.heart-1{
+          top: auto;
+          bottom: calc(70vw - 7px);
+          left: 33%;
+        }
+        .heart.heart-2{
+          top: auto;
+          bottom: calc(70vw + 0px);
+          left: calc(33% + 40px);
+        }
+        .heart.heart-3{
+          top: auto;
+          bottom: calc(70vw - 40px);
+          left: calc(33% + 23px);
+        }
+
+    }
+}
+
+@keyframes gift{
+    0%{
+        transform: translate(0px,-270px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+
+}
+@keyframes heart1{
+    0% {
+        opacity: 0;
+      }
+      8.5714% {
+        opacity: 0;
+      }
+      22.8571% {
+        opacity: 1;
+      }
+      71.4286% {
+        opacity: 1;
+      }
+      82.8571% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 0;
+      }
+
+}
+@keyframes heart2 {
+    0% {
+      opacity: 0;
+    }
+    17.1429% {
+      opacity: 0;
+    }
+    31.4286% {
+      opacity: 1;
+    }
+    71.4286% {
+      opacity: 1;
+    }
+    82.8571% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes heart3 {
+    0% {
+      opacity: 0;
+    }
+    25.7143% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    71.4286% {
+      opacity: 1;
+    }
+    82.8571% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+@keyframes button{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.17);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+}

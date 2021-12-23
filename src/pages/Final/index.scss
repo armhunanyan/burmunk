@@ -1,0 +1,205 @@
+.final{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding-left: 25px;
+
+    .title{
+        margin-top: 40px;
+        font-size: 27px;
+        text-transform: uppercase;
+        font-family: 'Montserratarm-Bold';
+        width: 405px;
+        height: 25px;
+        background-image: url(../../assets/images/txt3.png);
+        background-repeat: no-repeat;
+    }
+    .title-2{
+        margin-top: 0;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-family: 'Montserratarm-Bold';
+        position: absolute;
+        top: 90px;
+    }
+    .line{
+        position: absolute;
+        left:25px;
+        top: 365px;
+        width:470px;
+        height: 2px;
+        background-color: #d7d7d7;
+    }
+    .desc{
+        position: absolute;
+        width: 470px;
+        top: 110px;
+        font-family: 'Montserratarm-Regular';
+        font-size: 15px;
+        text-align: justify;
+        .break{
+            display: block;
+        }
+    }
+    .img{
+        position: absolute;
+        right: 25px;
+        width: 262px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        &:before{
+            content: "";
+            position: absolute;
+            right: 0;
+            top: -4px;
+            width: 41px;
+            height: 4px;
+            background-image: url(../../assets/images/bt.png);
+            background-size: contain;
+        }
+        &:after{
+            content: "";
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 41px;
+            height: 4px;
+            background-image: url(../../assets/images/bb.png);
+            background-size: contain;
+        }
+
+        img{
+            width: 100%;
+        }
+    }
+    .show{
+        font-size: 15px;
+        font-family: 'Montserratarm-SemiBold';
+        width: 327px;
+        line-height: 1.7;
+        position: absolute;
+        left: 25px;
+        bottom: 80px;
+
+        .promo{
+            color:#b40152;
+            font-family: 'Montserratarm-ExtraBold';
+            font-size: 17px;
+        }
+        .num{
+            position: relative;
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            text-align: center;
+            line-height: 35px;
+            font-size: 12px;
+            background-color: #f1b899;
+            color:#fff;
+            border-radius: 38px;
+            font-family: 'Montserratarm-Regular';
+            font-style: italic;
+            vertical-align: middle;
+            margin-left: 2px;
+
+            &:before{
+                content: "";
+                display: block;
+                position: absolute;
+                left: -4px;
+                top: 1px;
+                background-image: url(../../assets/images/curve.png);
+                background-size: contain;
+                width: 42px;
+                height: 38px;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+    .share{
+        position: absolute;
+        left: 25px;
+        bottom: 25px;
+        background-image: url(../../assets/images/button3.png);
+        background-repeat: no-repeat;
+        width: 140px;
+        height: 43px;
+        cursor: pointer;
+    }
+    .start{
+        position: absolute;
+        left: 215px;
+        bottom: 25px;
+        border-radius: 25px;
+        background-image: url(../../assets/images/button4.png);
+        background-repeat: no-repeat;
+        width: 219px;
+        height: 44px;
+    }
+}
+
+@media screen and (max-width:819px){
+    .final{
+        width: calc(100% - 40px);
+        padding-left: 20px;
+        height: unset;
+        padding-bottom: 40px;
+
+        .title{
+            max-width: 405px;
+            width: 80%;
+            background-size: contain;
+            margin-top: 30px;
+            margin-bottom: 0;
+        }
+        .title-2{
+            position: unset;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+        .desc{
+            position: unset;
+            width: unset;
+            margin-top: 0;
+            font-size: 12px;
+        }
+        .img{
+            position: relative;
+            transform: unset;
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+            left: -10px;
+            right: auto;
+        }
+        .line{
+            display: none;
+        }
+        .show{
+            position: unset;
+            width: 100%;
+            font-size: 13px;
+        }
+        .share{
+            width: 112px;
+            background-size: contain;
+            background-position: center;
+            left: 20px;
+            bottom: 0px;
+            cursor: pointer;
+        }
+        .start{
+            left: auto;
+            right: 0;
+            bottom: 0px;
+            width: 169px;
+            background-size: contain;
+            background-position: center;
+        }
+    }
+}
