@@ -2,7 +2,7 @@
 -------
 You can see the live demo [here](https://hunanyan.am/burmunk/)
 
-![Desktop](https://github.com/armhunanyan/burmunk/public/preview.png)
+![Desktop](https://github.com/armhunanyan/burmunk/blob/main/public/preview.png)
 
 # Getting Started with Create React App
 
