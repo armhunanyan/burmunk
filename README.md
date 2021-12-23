@@ -1,6 +1,6 @@
 ## Demo
 -------
-You can see the live demo [here](https://hunanyan.am/burmunk/)
+You can see the live demo [here](https://hunanyan.am/burmunk/){:target="_blank"}
 
 ![Desktop](https://github.com/armhunanyan/burmunk/blob/main/public/preview.png)
 
